@@ -1220,6 +1220,10 @@ makeinstall_target() {
   ### Music Player
   add_emu_core music gmu gmu true
   add_es_system music
+  
+  ### Chip Tune Player
+  add_emu_core chiptune zxtune zxtune true
+  add_es_system chiptune
 
   ### Moonlight
   add_es_system moonlight
