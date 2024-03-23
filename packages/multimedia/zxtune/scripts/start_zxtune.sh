@@ -20,4 +20,4 @@ fi
 #sed -i '/vid_defwidth=/c\vid_defwidth='$(fbwidth) /storage/.config/gzdoom/gzdoom.ini
 
 cd "${RUN_DIR}"
-echo "${1}" | xargs /usr/bin/zxtune123 >/var/log/zxtune123.log 2>&1
+echo \"${1}\" | xargs /usr/bin/zxtune123 >/var/log/zxtune123.log 2>&1
