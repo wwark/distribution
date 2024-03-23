@@ -6,14 +6,13 @@
 set_kill set "-9 zxtune"
 
 RUN_DIR="/storage/roms/chiptune"
-CONFIG="/storage/.config/zxtune/zxtune.cfg"
 
 if [ ! -d "/storage/.config/zxtune/" ]; then
   cp -rf /usr/share/zxtune /storage/.config/
 fi
 
-if [ ! -f "/storage/.config/zxtune/zxtune.cfg" ]; then
-  cp -rf /usr/share/zxtune/zxtune.cfg /storage/.config/zxtune
+if [ ! -f "/storage/.config/zxtune/zxtune.conf" ]; then
+  cp -rf /usr/share/zxtune/zxtune.conf /storage/.config/zxtune
 fi
 
 # set resolution
